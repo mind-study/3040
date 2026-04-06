@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3040교화 훈련 프로그램</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── 헤더 ── -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">🔴 3040교화 <span>훈련 프로그램</span></div>
+      <nav>
+        <a href="#notices">공지사항</a>
+        <a href="#schedule">일정</a>
+        <a href="#about">소개</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── 히어로 ── -->
+  <section class="hero">
+    <h1>함께 걷는 신앙의 길</h1>
+    <p>원불교 3040 교화 훈련 프로그램에 오신 것을 환영합니다.<br>일정, 자료, 공지사항을 한 곳에서 확인하세요.</p>
+    <a href="#schedule" class="btn">훈련 일정 보기</a>
+  </section>
+
+  <!-- ── 메인 콘텐츠 ── -->
+  <main>
+
+    <!-- 메뉴 카드 -->
+    <section style="margin-bottom:40px;">
+      <div class="card-grid">
+        <div class="card" onclick="document.getElementById('schedule').scrollIntoView({behavior:'smooth'})">
+          <div class="card-icon">📅</div>
+          <h3>훈련 일정</h3>
+          <p>월별 교육 및 모임 일정</p>
+        </div>
+        <div class="card" onclick="document.getElementById('notices').scrollIntoView({behavior:'smooth'})">
+          <div class="card-icon">📋</div>
+          <h3>공지사항</h3>
+          <p>최신 안내 및 자료</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📖</div>
+          <h3>훈련 자료</h3>
+          <p>교재 및 법문 자료</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💬</div>
+          <h3>소감 나눔</h3>
+          <p>참여자 소감 및 소통</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 공지사항 -->
+    <section id="notices">
+      <h2 class="section-title"><span class="icon">📋</span> 공지사항</h2>
+      <div class="notice-list" id="notice-list">
+        <!-- JavaScript로 렌더링 -->
+      </div>
+    </section>
+
+    <!-- 훈련 일정 -->
+    <section id="schedule">
+      <h2 class="section-title"><span class="icon">📅</span> 훈련 일정</h2>
+      <div class="schedule-list" id="schedule-list">
+        <!-- JavaScript로 렌더링 -->
+      </div>
+    </section>
+
+    <!-- 소개 -->
+    <section id="about">
+      <h2 class="section-title"><span class="icon">🔵</span> 프로그램 소개</h2>
+      <div class="card" style="text-align:left; cursor:default;">
+        <p style="margin-bottom:12px;">
+          <strong>3040교화 훈련 프로그램</strong>은 원불교 30~40대 교도를 대상으로 신앙심을 키우고,
+          교화 역량을 함께 키워가는 훈련 과정입니다.
+        </p>
+        <p style="margin-bottom:12px;">
+          정기 교육, 집중 훈련, 소감 나눔, 공동 실천 등을 통해 신앙의 생활화를 목표로 합니다.
+        </p>
+        <p style="color: var(--text-muted); font-size:0.9rem;">
+          문의: 교화훈련부 담당자에게 연락해주세요.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── 푸터 ── -->
+  <footer>
+    <p><strong>원불교 3040교화 훈련 프로그램</strong></p>
+    <p style="margin-top:4px;">© 2026 Won-Buddhism. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
