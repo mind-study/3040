@@ -62,7 +62,9 @@ export default function Modal({ item, onClose }: Props) {
             <div className="instructor-info">
               <p className="instructor-label">{item.instructor.title}</p>
               <h3 className="instructor-name">{item.instructor.name}</h3>
-              <p className="instructor-subtitle">15년 경력의 커뮤니케이션 코치 &amp; 국내 최초 마술심리상담사</p>
+              {item.instructor.subtitle && (
+                <p className="instructor-subtitle">{item.instructor.subtitle}</p>
+              )}
             </div>
           </div>
         )}

@@ -1,6 +1,7 @@
 export type InstructorInfo = {
   name: string
   title: string
+  subtitle?: string
   photo: string
   credentials: string[]
 }
@@ -47,11 +48,12 @@ export const programs: ProgramSession[] = [
         instructor: {
           name: '홍미선',
           title: '소통과 힐링의 안내자',
+          subtitle: '15년 경력의 커뮤니케이션 코치 & 국내 최초 마술심리상담사',
           photo: '/images/instructor-hong.jpg',
           credentials: [
-            '현) 커뮤니케이션 및 부모 교육 전문 강사',
-            '전문 자격: 상담심리사, 에니어그램 전문 강사',
-            '주요 출강: 다수의 정부기관, 교육청, 기업, 대학 및 지자체 부모 교육 특강 진행',
+            '마술치료 최초개발자',
+            '국가 교육부 교재집필자',
+            '대한민국 대표 사회서비스 선정',
           ],
         },
         sections: [
@@ -104,9 +106,25 @@ export const programs: ProgramSession[] = [
         target: '부모',
         title: '육아 멘토링 & 싱잉볼 테라피',
         description:
-          '"김경민 소아정신과 전문의"에게 듣는 명쾌한 육아 해답, "낳고, 기르고, 사랑하라"',
+          '"임명호 소아정신과 전문의"에게 듣는 명쾌한 육아 해답, "낳고, 기르고, 사랑하라"',
         detail:
-          '소아정신과 전문의 김경민 선생님의 강연을 통해 아이의 마음을 이해하고, 올바른 양육 방법을 배웁니다. 강연 후에는 싱잉볼의 깊은 울림과 함께 지친 마음을 치유하는 힐링 시간을 가져요.\n\n⏱ 소요시간: 강연 90분 + 싱잉볼 30분\n👥 대상: 부모\n🎤 강사: 김경민 소아정신과 전문의',
+          '소아정신과 전문의 임명호 선생님의 강연을 통해 아이의 마음을 이해하고, 올바른 양육 방법을 배웁니다. 강연 후에는 싱잉볼의 깊은 울림과 함께 지친 마음을 치유하는 힐링 시간을 가져요.\n\n⏱ 소요시간: 강연 90분 + 싱잉볼 30분\n👥 대상: 부모\n🎤 강사: 임명호 소아정신과 전문의',
+        instructor: {
+          name: '임명호 소아정신과 전문의',
+          title: '소아청소년정신과 전문의',
+          subtitle: '단국대학교 심리치료학과 교수 & 소아청소년정신과 전문의',
+          photo: '/images/instructor-lim.jpg',
+          credentials: [
+            '충남대학교 의학과 학사',
+            '단국대학교 정신과학 석사',
+            '단국대학교 병원 정신과전공의',
+            '단국대학교 정신과학 박사, 정신과전문의',
+            '서울대학교 어린이병원 전임의, 소아청소년정신과전문의',
+            '단국대학교 의과대학 조교수, 부교수',
+            'Yale Univ. Psychiatry/Child study center, Visiting professor',
+            '단국대학교 심리치료학과 교수 : 2014.01 ~ 현재',
+          ],
+        },
       },
     ],
     child: [
