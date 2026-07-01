@@ -140,7 +140,7 @@ export const programs: ProgramSession[] = [
   },
   {
     month: 7,
-    date: '7월 11일 (토) 오후 2시',
+    date: '7월 25일 (토) 오후 2시',
     type: '따로',
     icon: '🍵',
     adult: [
